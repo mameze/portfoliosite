@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   const text =
-    "I’m an aspiring Systems Engineer, passionate about system programming and web development, and driven to turn ideas into reality through clean and efficient code. I enjoy working with backend technologies like Go, Rust, and PHP, while continuously learning how operating systems and networks function at their core. With a strong interest in cybersecurity, I aim to build secure, scalable systems and contribute to projects that bridge performance, reliability, and innovation.";
+    "I’m an aspiring Systems Engineer, passionate about system programming and web development, and driven to turn ideas into reality through clean and efficient code. I enjoy working with backend technologies like Go and PHP (Laravel), while also exploring frontend tools such as React and Tailwind. With a strong focus on networking and cybersecurity, I specialize in penetration testing and security analysis, aiming to build secure, scalable systems and applications that bridge performance, reliability, and innovation.";
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
