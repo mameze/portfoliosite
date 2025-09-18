@@ -1,21 +1,11 @@
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
-export default function contact() {
+export default function Contact() {
   return (
-    <div
-      className="min-h-screen flex flex-col items-center justify-center p-8 bg-gray-900 text-white relative"
-      style={{
-        backgroundImage: "url('/bg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Overlay to darken background */}
-      <div className="absolute inset-0 bg-black/50"></div>
-
+    <div className="min-h-screen flex flex-col items-center justify-center p-8 text-white relative">
       {/* Content */}
       <div className="relative z-10 text-center max-w-xl">
-        {/* Profile Picture */}
         <Image
           src="/478.jpg"
           alt="Steve"
@@ -24,33 +14,26 @@ export default function contact() {
           className="rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
         />
 
-        <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
+        <h1 className="text-5xl font-extrabold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">Contact Me</h1>
         <p className="text-lg mb-6">
           I’d love to hear from you! Reach out for collaborations, projects, or just a chat 🚀
         </p>
 
-        {/* Links */}
         <ul className="space-y-4 text-lg">
           <li>
             📧 Email:{" "}
             <a
-              href="skikuvi57@gmail.com"
+              href="mailto:skikuvi57@gmail.com"
               className="text-blue-300 hover:underline"
             >
               skikuvi57@gmail.com
             </a>
           </li>
+
           <li>
-            💼 LinkedIn:{" "}
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-300 hover:underline"
-            >
-              linkedin.com/in/yourusername
-            </a>
+            📱 Mobile: <span className="text-green-400">+254 758 059 963</span>
           </li>
+
           <li>
             🐙 GitHub:{" "}
             <a
@@ -64,6 +47,16 @@ export default function contact() {
           </li>
         </ul>
       </div>
+
+      {/* Floating WhatsApp Icon */}
+      <a
+        href="https://wa.me/254758059963"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition"
+      >
+        <FaWhatsapp className="text-3xl" />
+      </a>
     </div>
   );
 }

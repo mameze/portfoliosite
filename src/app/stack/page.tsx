@@ -18,19 +18,26 @@ export default function Stack() {
     },
     {
       title: "Cybersecurity / Networking & Pentesting",
-      items: ["Burp Suite", "Metasploit", "Wireshark", "Nmap"],
+      items: [
+        "Burp Suite",
+        "Metasploit",
+        "Wireshark",
+        "Nmap",
+        "Cisco Packet Tracer",
+      ],
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-8">
-      <div className="max-w-3xl">
-        {}
+    <div className="min-h-screen flex items-center justify-center p-8 relative text-white">
+      {}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      <div className="relative z-10 max-w-3xl">
         <h1 className="text-5xl font-extrabold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
           ⚡ My Tech Stack
         </h1>
 
-        {}
         <p className="text-lg text-gray-300 mb-10 text-center">
           Here are the technologies I use across{" "}
           <span className="text-cyan-400">frontend</span>,{" "}
@@ -40,7 +47,6 @@ export default function Stack() {
           <span className="text-red-400">networking & security</span>.
         </p>
 
-        {}
         <div className="space-y-4 text-lg">
           {categories.map((category, idx) => (
             <p key={idx} className="text-gray-200">
